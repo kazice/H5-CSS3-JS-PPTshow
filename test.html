@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main" id="temp_main">
+        <div class="main-i" id="main_{{index}}">
+            <img src="pics/{{index}}.jpg" alt="" class="picture">
+            <div class="cap">
+                <h2>{{h2}}</h2>
+                <h3>{{h3}}</h3>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var h = document.getElementById("temp_main");
+        var m = h.innerHTML.replace('^\s*','');
+        console.log(h);
+        console.log(m);
+    </script>
+</body>
+</html>
